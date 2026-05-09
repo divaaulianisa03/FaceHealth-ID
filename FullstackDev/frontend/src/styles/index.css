@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Variabel Warna FaceHealt ID (Emerald Theme) */
+  --bg-primary: #f8fafc; /* Slate-50 */
+  --text-main: #334155;
+  --text-heading: #0f172a;
+  --accent: #059669; /* Emerald-600 */
+  --border-color: #e2e8f0;
+  
+  --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-main);
+  background-color: var(--bg-primary);
+  
+  overflow-x: hidden;
+}
+
+html, 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color-scheme: light; 
+}
+
+#root {
+  width: 100%; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: none; 
+}
+
+h1, h2, h3 {
+  color: var(--text-heading);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.container-custom {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@layer components {
+  .input-modern {
+    @apply w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all bg-gray-50 text-gray-700 appearance-none cursor-pointer;
+  }
+}
