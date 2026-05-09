@@ -1,2 +1,12 @@
 AiEngineer/AcneDataset/
 AiEngineer/AcneDataset.zip
+
+FullstackDev/frontend/node_modules/
+FullstackDev/frontend/dist/
+FullstackDev/frontend/.env
+FullstackDev/frontend/dist-ssr/
+FullstackDev/frontend/*.local
+
+.vscode/
+.DS_Store
+*.log
