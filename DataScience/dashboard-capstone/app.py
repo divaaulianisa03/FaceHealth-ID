@@ -397,7 +397,7 @@ elif sens_sel == "Non-Sensitive":
     flt = flt[flt['Sensitivity'] == 'No']
 
 # HEADER
-st.markdown('<div class="dash-title">Skincare Acne Intelligence</div>', unsafe_allow_html=True)
+st.markdown('<div class="dash-title">Skincare Acne dashboard</div>', unsafe_allow_html=True)
 st.markdown(f'<div class="dash-sub">Analisis Formulasi Bahan Aktif untuk Perawatan Acne &mdash; {len(flt):,} dari {len(df):,} profil</div>', unsafe_allow_html=True)
 
 if len(flt) == 0:
